@@ -12,5 +12,8 @@ function M.greet(name)
     print("Hello, " .. name)
 end
 
+function M.hello()
+    print("Hello world!!")
+end
 -- 모듈은 값을 반환해주어야 한다.
 return M

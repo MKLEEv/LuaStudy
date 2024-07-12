@@ -10,6 +10,8 @@ third = true
 fourth = {1,3,5,7}
 fifth = {['asd'] = 1, ['def'] = 2, ['cva'] = 'asvs'}
 sixth = nil --null값
+seventh = 3.14159265 -- number값은 정수, 소수 다 가능
+eighth = 1.048596
 
 print(first)
 print(second)
@@ -42,3 +44,18 @@ for i, value in ipairs(fifth) do
 end
 
 print(sixth)
+
+print(seventh + eighth)
+
+-- error. number + string
+-- print(seventh + second)
+
+school = {name = nil, id = nil, "grade", isHigh="No", locale = "seoul", "gildong"}
+
+name = "elli"
+id = 4
+school.name = name
+school.id = id
+for key, value in pairs(school) do
+    print("key = ", key, "value = ", value)
+end

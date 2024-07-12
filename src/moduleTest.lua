@@ -8,3 +8,4 @@
 local module = require("module")
 
 module.greet("오박사")
+module.hello()
